@@ -55,7 +55,7 @@ const Header = () => {
                   <FiSettings className="w-4 h-4 mr-3" />
                   Settings
                 </a>
-                <a href="#" className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-50">
+                <a href="/support" className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-50">
                   <FiHelpCircle className="w-4 h-4 mr-3" />
                   Help
                 </a>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiCheckCircle } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const CircularProgress = ({ value, label, subLabel, percentage = 75 }) => {
   const radius = 60;
@@ -190,9 +191,11 @@ const Results = ({
             <button className="w-full bg-[#001529] text-white py-3 px-6 rounded-lg hover:bg-opacity-90 transition-colors">
               Retry Test
             </button>
-            <button className="w-full bg-[#5E2F7C] text-white py-3 px-6 rounded-lg hover:bg-opacity-90 transition-colors">
-              Back to Dashboard
-            </button>
+            <Link to="/dashboard">
+              <button className="w-full bg-[#5E2F7C] text-white py-3 px-6 rounded-lg hover:bg-opacity-90 transition-colors">
+                Back to Dashboard
+              </button>
+            </Link>
           </div>
         </div>
       </div>

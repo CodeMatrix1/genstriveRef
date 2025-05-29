@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200">
@@ -45,24 +48,24 @@ const Footer = () => {
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/features" className="text-base text-gray-500 hover:text-gray-900">
                       Features
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/subjects" className="text-base text-gray-500 hover:text-gray-900">
                       Subjects
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/grade-levels" className="text-base text-gray-500 hover:text-gray-900">
                       Grade Levels
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/pricing" className="text-base text-gray-500 hover:text-gray-900">
                       Pricing
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -72,24 +75,24 @@ const Footer = () => {
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/support" className="text-base text-gray-500 hover:text-gray-900">
                       Help Center
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/support" className="text-base text-gray-500 hover:text-gray-900">
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/support" className="text-base text-gray-500 hover:text-gray-900">
                       FAQ
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/support" className="text-base text-gray-500 hover:text-gray-900">
                       Community
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -101,24 +104,24 @@ const Footer = () => {
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/about" className="text-base text-gray-500 hover:text-gray-900">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/about" className="text-base text-gray-500 hover:text-gray-900">
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/about" className="text-base text-gray-500 hover:text-gray-900">
                       Careers
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/about" className="text-base text-gray-500 hover:text-gray-900">
                       Press
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -128,19 +131,19 @@ const Footer = () => {
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/legal" className="text-base text-gray-500 hover:text-gray-900">
                       Privacy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/legal" className="text-base text-gray-500 hover:text-gray-900">
                       Terms
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                    <Link to="/legal" className="text-base text-gray-500 hover:text-gray-900">
                       Cookie Policy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

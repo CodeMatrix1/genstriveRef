@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MainContent = ({ name }) => {
   return (
@@ -38,7 +39,9 @@ const MainContent = ({ name }) => {
 
       <div className="flex justify-between bg-[#f7ecff] rounded-[15px] p-4 md:p-10 mb-4 md:mb-8">
         <h2 className="text-2xl md:text-[32px] font-bold text-[#2f2f68] mb-2 md:mb-4">AI Test Generator</h2>
-        <button className="bg-[#001e32] text-white text-xl md:text-[32px] px-4 md:px-8 py-2 md:py-4 rounded-[15px]">Generate Test</button>
+        <Link to="/generate">
+          <button className="bg-[#001e32] text-white text-xl md:text-[32px] px-4 md:px-8 py-2 md:py-4 rounded-[15px]">Generate Test</button>
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">

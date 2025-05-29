@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronBottomNormal } from "../icons/ChevronBottomNormal";
 import { FaQuestionCircle } from 'react-icons/fa';
 import { IoLogOutOutline } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -12,7 +13,11 @@ const Sidebar = () => {
         <div className="mb-4 md:mb-6 relative">
           <select className="w-full p-2 md:p-3 text-[#2f2f68] rounded appearance-none">
             <option>Select grade</option>
-            <option>6th-10th</option>
+            <option>6th</option>
+            <option>7th</option>
+            <option>8th</option>
+            <option>9th</option>
+            <option>10th</option>
             <option>11th</option>
             <option>12th</option>
           </select>
@@ -41,7 +46,10 @@ const Sidebar = () => {
           <div>
             <button className="flex items-center justify-center gap-2 hover:text-gray-300 transition-colors w-full py-2">
               <FaQuestionCircle className="text-xl flex items-center" />
+              <Link to="/support">
               <span className="flex items-center">Help Center</span>
+              </Link>
+              
             </button>
           </div>
           <div>
