@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function TwoFactorSignUp() {
+export default function TwoFactorSignup() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const handleSubmit = async (e) => {
