@@ -19,6 +19,7 @@ import TwoFactorForgotPassword from "./pages/TwoFactorForgotPassword.jsx";
 import GenerateTest from "./pages/GenerateTest.jsx";
 import TestPreview from "./pages/TestPreview.jsx";
 import TestResult from "./pages/TestResult.jsx";
+import { DashboardProvider } from "./context/DashboardContext.jsx";
 
 function App() {
   return (
@@ -28,7 +29,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/dashboard" element={<StudentDashboard />} />
-        <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/admin" 
+        element={
+          <DashboardProvider>
+            <AdminPanel />
+          </DashboardProvider>
+        }
+      />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
