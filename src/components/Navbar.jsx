@@ -21,12 +21,17 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex gap-4">
-          <button className="bg-[#001e32] text-white px-10 py-4 rounded-full font-semibold text-sm">
-            Login
-          </button>
-          <button className="bg-[#001e32] text-white px-8 py-4 rounded-full font-semibold text-sm">
-            Sign Up
-          </button>
+          <Link to="/login">
+            <button className="bg-[#001e32] text-white px-10 py-4 rounded-full font-semibold text-sm">
+              Login
+            </button>
+          </Link>
+          <Link to="/signup">
+            <button className="bg-[#001e32] text-white px-8 py-4 rounded-full font-semibold text-sm">
+              Sign Up
+            </button>
+          </Link>
+          
         </div>
 
         {/* Tablet Navigation */}

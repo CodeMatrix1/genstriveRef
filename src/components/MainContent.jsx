@@ -39,7 +39,7 @@ const MainContent = ({ name }) => {
 
       <div className="flex justify-between bg-[#f7ecff] rounded-[15px] p-4 md:p-10 mb-4 md:mb-8">
         <h2 className="text-2xl md:text-[32px] font-bold text-[#2f2f68] mb-2 md:mb-4">AI Test Generator</h2>
-        <Link to="/generate">
+        <Link to="/generate-test">
           <button className="bg-[#001e32] text-white text-xl md:text-[32px] px-4 md:px-8 py-2 md:py-4 rounded-[15px]">Generate Test</button>
         </Link>
       </div>
