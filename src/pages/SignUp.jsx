@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function SignUp() {
   const [userType, setUserType] = useState("student");
@@ -200,12 +201,12 @@ export default function SignUp() {
               <div className="text-center mt-4">
                 <p className="text-[#000000c4] font-light text-xl">
                   Already have an Account?{" "}
-                  <a
-                    href="login"
+                  <Link
+                    to="/login"
                     className="text-black font-light hover:underline"
                   >
                     Login
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

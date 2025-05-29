@@ -45,12 +45,16 @@ const Navbar = () => {
 
         {/* Tablet Buttons */}
         <div className="hidden md:flex lg:hidden gap-2">
-          <button className="bg-[#001e32] text-white px-4 py-2 rounded-full font-semibold text-sm">
-            Login
-          </button>
-          <button className="bg-[#001e32] text-white px-3 py-2 rounded-full font-semibold text-sm">
-            Sign Up
-          </button>
+          <Link to="/login">
+            <button className="bg-[#001e32] text-white px-4 py-2 rounded-full font-semibold text-sm">
+              Login
+            </button>
+          </Link>
+          <Link to="/signup">
+            <button className="bg-[#001e32] text-white px-3 py-2 rounded-full font-semibold text-sm">
+              Sign Up
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -70,12 +74,16 @@ const Navbar = () => {
             <Link to="/dashboard" className="text-[#2f2f68] font-semibold text-lg">DashBoard</Link>
             <Link to="/about" className="text-[#2f2f68] font-semibold text-lg">About Us</Link>
           </div>
-          <button className="w-4/5 bg-[#001e32] text-white py-2 rounded-full font-semibold text-sm">
-            Login
-          </button>
-          <button className="w-4/5 bg-[#001e32] text-white py-2 rounded-full font-semibold text-sm">
-            Sign Up
-          </button>
+          <Link to="/login" className="w-4/5">
+            <button className="w-full bg-[#001e32] text-white py-2 rounded-full font-semibold text-sm">
+              Login
+            </button>
+          </Link>
+          <Link to="/signup" className="w-4/5">
+            <button className="w-full bg-[#001e32] text-white py-2 rounded-full font-semibold text-sm">
+              Sign Up
+            </button>
+          </Link>
         </div>
       )}
     </nav>

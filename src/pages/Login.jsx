@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [userType, setUserType] = useState("student");
@@ -188,22 +189,22 @@ export default function Login() {
               <div className="text-center mt-4">
                 <p className="text-[#000000c4] font-light text-xl">
                   Don't have an Account?{" "}
-                  <a
-                    href="signup"
+                  <Link
+                    to="/signup"
                     className="text-black font-light hover:underline"
                   >
                     Sign up
-                  </a>
+                  </Link>
                 </p>
               </div>
 
               <div className="text-center">
-                <a
-                  href="/forgot-password"
+                <Link
+                  to="/forgot-password"
                   className="text-black font-light text-xl hover:underline"
                 >
                   Forgot Password?
-                </a>
+                </Link>
               </div>
             </div>
           </form>
