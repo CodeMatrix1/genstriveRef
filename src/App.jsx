@@ -14,7 +14,7 @@ import SignUp from "./pages/SignUp.jsx";
 import Login from "./pages/Login.jsx";
 import ForgotPassword from "./pages/ForgotPassword.jsx";
 import ChangePassword from "./pages/ChangePassword.jsx";
-import TwoFactorSignUp from "./pages/TwoFactorSignUp.jsx";
+import TwoFactorSignup from "./pages/TwoFactorSignup.jsx";
 import TwoFactorForgotPassword from "./pages/TwoFactorForgotPassword.jsx";
 import GenerateTest from "./pages/GenerateTest.jsx";
 import TestPreview from "./pages/TestPreview.jsx";
@@ -33,7 +33,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/change-password" element={<ChangePassword />} />
-        <Route path="/two-factor-signup" element={<TwoFactorSignUp />} />
+        <Route path="/two-factor-signup" element={<TwoFactorSignup />} />
         <Route path="/two-factor-forgot-password" element={<TwoFactorForgotPassword />} />
         <Route path="/results" element={<ResultPage />} />
         <Route path="/about" element={<About />} />
