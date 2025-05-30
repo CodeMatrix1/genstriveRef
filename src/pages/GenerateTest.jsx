@@ -101,7 +101,13 @@ export default function GenerateTest(){
           <div className="max-w-[1440px] mx-auto px-4">
             <div className="flex items-center mb-8">
               <ChevronLeftNormal className="w-6 h-6 mr-4" />
-              <span className="font-medium text-[#2f2f68] text-xl">Back to Dashboard</span>
+              <Link to="/dashboard">
+                <button className="font-medium text-[#2f2f68] text-xl relative group">
+                  Back to Dashboard
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2f2f68] transition-all duration-300 group-hover:w-full"></span>
+                </button>
+              </Link>
+              
             </div>
 
             <h1 className="font-semibold text-[#2f2f68] text-5xl mb-4">Generate Test</h1>
