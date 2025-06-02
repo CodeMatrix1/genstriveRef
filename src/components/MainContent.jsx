@@ -129,6 +129,15 @@ const MainContent = ({ name }) => {
         <div className="bg-white p-3 md:p-4 border border-solid border-[#2f2f68] mb-2 md:mb-4">
         </div>
       </div>
+
+      <div  className='flex justify-center items-center mt-2'>
+        <Link to="/generate-test">
+          <button className="bg-[#001e32] text-white text-xl md:text-[32px] px-4 md:px-8 py-2 md:py-4 rounded-[15px]">Generate Test</button>
+        </Link>
+      </div>
+      
+
+
     </section>
   );
 };
